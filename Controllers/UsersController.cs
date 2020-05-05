@@ -60,7 +60,7 @@ namespace PostgresAPI.Controllers
         {
             try
             {
-                _context.Add(model);
+                _context.Users.Add(model);
                 if (_context.SaveChanges() > 0)
                 {
                     //instead of return 200: Ok, we return 201: Created 
